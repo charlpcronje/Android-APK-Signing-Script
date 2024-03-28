@@ -53,6 +53,18 @@ The configuration file (`{app_name}.sign.json`) contains the necessary informati
 - `key_alias`: Alias of the key used for signing
 - `key_password`: Password for the key
 
+- **Example config file**
+
+```json
+{
+  "app_path": "/path/to/your/android/project",
+  "keystore_file": "/path/to/your/keystore/file.keystore",
+  "keystore_password": "yourKeystorePassword",
+  "key_alias": "yourKeyAlias",
+  "key_password": "yourKeyPassword"
+}
+```
+
 If you run the script with the `--new` flag, it will prompt you to enter the values for each field and create a new configuration file.
 
 ## Adding Signing Configuration to build.gradle
